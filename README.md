@@ -185,7 +185,7 @@ frontend/
 
 ## 📷 Screenshots
 
-*(Add screenshots of your app here)*
+<img width="1916" height="1030" alt="Screenshot 2025-09-28 220013" src="https://github.com/user-attachments/assets/b1708ca4-96f9-46b6-9372-73dfbc8fa196" />
 
 ---
 
