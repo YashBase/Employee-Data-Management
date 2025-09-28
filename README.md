@@ -14,9 +14,9 @@ This project allows you to **Create, Read, Update, and Delete** employee records
 
   * RESTful API endpoints under `/api/employees`
   * Employee entity: `name`, `email`, `position`
-  * Persistent storage using **SQLite** (or any preferred DB)
+  * Persistent storage using **MySQL**
   * Full CRUD functionality: `Create`, `Read`, `Update`, `Delete`
-  * Optional: Test cases for backend endpoints
+  * Test cases for backend endpoints and core business logic
 
 * **Frontend:**
 
@@ -39,7 +39,7 @@ This project allows you to **Create, Read, Update, and Delete** employee records
 | Layer           | Technology                                                       |
 | --------------- | ---------------------------------------------------------------- |
 | Frontend        | React.js, Redux, TailwindCSS, Framer Motion, Lucide Icons, Axios |
-| Backend         | Spring Boot, Java 17+, Spring Data JPA, SQLite                   |
+| Backend         | Spring Boot, Java 21, Spring Data JPA, MySQL                     |
 | Build & Dev     | Maven, npm/yarn                                                  |
 | Version Control | Git, GitHub                                                      |
 
@@ -67,8 +67,8 @@ cd backend
 2. Configure database in `application.properties`:
 
 ```properties
-spring.datasource.url=jdbc:sqlite:employee.db
-spring.datasource.driver-class-name=org.sqlite.JDBC
+spring.datasource.url=jdbc:mysql://localhost:3306/employee_db
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 ```
@@ -149,10 +149,8 @@ backend/
 ```
 frontend/
 ├─ src/
-│  ├─ components/    # Reusable components
 │  ├─ pages/         # Pages (EmployeeList, EmployeeForm)
 │  ├─ redux/         # Redux store and slices
-│  ├─ services/      # API calls with Axios
 │  └─ App.js
 ├─ tailwind.config.js
 ├─ package.json
@@ -170,16 +168,7 @@ frontend/
 * Smooth **animations** using Framer Motion
 * **Responsive UI** built with TailwindCSS
 * **RESTful API** backend in Spring Boot
-* Optional **backend tests** for endpoints
-
----
-
-## 🧪 Future Enhancements
-
-* Add **pagination** for large employee lists
-* Implement **role-based access control**
-* Add **profile pictures** for employees
-* Integrate **unit and integration tests** for frontend and backend
+* **backend tests** for endpoints and core business logic
 
 ---
 
@@ -189,17 +178,12 @@ frontend/
 
 ---
 
-## 📄 License
-
-This project is **MIT Licensed** – see the [LICENSE](LICENSE) file for details.
-
----
 
 ## 🤝 Contact
 
 * **Name:** Yash Patil
-* **Email:** [your-email@example.com](mailto:your-email@example.com)
-* **GitHub:** [https://github.com/yourusername](https://github.com/yourusername)
+* **Email:** [yashpatil62002@gmail.com](mailto:yashpatil62002@gmail.com)
+* **GitHub:** [https://github.com/YashBase](https://github.com/YashBase)
 
 ---
 
